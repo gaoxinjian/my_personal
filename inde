@@ -1,0 +1,2 @@
+移动端取消默认长度数字变电话：
+	<meta name="format-detection" content="telephone=no" />
