@@ -1,2 +1,15 @@
 移动端取消默认长度数字变电话：
 	<meta name="format-detection" content="telephone=no" />
+
+
+获取dom数组每个元素相同的属性，比如一组class相同div的自定义属性data-id，有如下三种方法：
+1）eq()方法
+for(var i=0; i<$('.drop-checked').length; i++){
+    console.log($('.drop-checked').eq(i).attr('data-id'));
+}
+
+2）each()方法
+$('.drop-checked').each(function(){console.log($(this).attr('data-id'));});
+
+3）attr()方法
+$('.drop-checked').attr('data-id', function(index, value){console.log(value)});
