@@ -13,3 +13,9 @@ $('.drop-checked').each(function(){console.log($(this).attr('data-id'));});
 
 3）attr()方法
 $('.drop-checked').attr('data-id', function(index, value){console.log(value)});
+
+
+防止一个事件本重复绑定的方法（不太清楚合不合理，但是效果是对的。）
+$(select).unbind().on('click', function(){
+	//do sth
+});
